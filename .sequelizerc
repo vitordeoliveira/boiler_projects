@@ -7,5 +7,6 @@ module.exports = {
     "database",
     "migrations"
   ),
-  "models-path": path.resolve(__dirname, "database", "models")
+  "models-path": path.resolve(__dirname, "database", "models"),
+  "seeders-path": path.resolve(__dirname, "database", "seeders")
 };
