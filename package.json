@@ -4,7 +4,13 @@
   "main": "server.js",
   "author": "Vitor de Oliveira",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev-web": "concurrently \"yarn start\" \"yarn --cwd ./web/ start\""
+  },
   "dependencies": {
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
